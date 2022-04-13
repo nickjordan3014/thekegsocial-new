@@ -1,0 +1,26 @@
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: 20% 60% 20%;
+        display: grid;
+    }
+    .form-grid-item {
+        grid-column: 2 / span 1;
+        margin: auto;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+/*Header Image*/
+.header-image {
+    width: 100%;
+    height: 38vw;
+    background-image: url("../img/main/headerImage.png");
+    background-size: cover;
+}
+

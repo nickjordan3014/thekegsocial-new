@@ -1,0 +1,173 @@
+/*Overall website body styling*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1A2732;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+    color: white;
+    height: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+} 
+.content {
+    flex: 1;
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+
+p {
+    font-size: 16px;
+}
+
+/*Grid for Navigation Bar*/ 
+
+/*  small and medium devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1;
+        display: grid;
+        content: justify;
+    } .grid-item {
+        columns: 1 / auto;
+        text-align: center;
+    }
+
+    .nav-word {
+        text-decoration: none;
+        color: white;
+        display: block;
+    } .nav-logo {
+        width: 75px;
+        position: relative;
+    }
+    /*Footer Grid*/
+    .information-grid {
+        grid-template-columns:auto;
+        display: grid;
+        background-color: #51626F !important;
+    }
+    .footer-item {
+        grid-column: auto / span 1;
+        text-align: center;
+    }
+    .goaway {
+        display: none;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: auto;
+        height: 75px;
+    }
+    .grid-item {
+        columns: 1 / auto;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display:block;
+    }
+    .nav-word {
+        color: white;
+        text-decoration: none !important;
+        display: table-cell;
+    }
+    .nav-word:hover {
+        color: black;
+        background-color: white;
+    }
+    .nav-word-center {
+        padding-left: 10px; padding-right: 10px;
+        min-height: 10em;
+        vertical-align: middle;
+    }
+    .nav-logo {
+        width: 70px;
+        padding:5px;
+    }
+    /*Footer Grid*/
+    .information-grid {
+        grid-template-columns: 33% 34% 33%;
+        display: grid;
+        background-color: #51626F !important;
+    }
+    .footer-item {
+        grid-column: auto / span 1;
+        text-align: left;
+        margin: 10px;
+    }
+}
+
+/*Footer Styling*/
+
+.house-info-line {
+    margin-right: 20px; padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.party-button {
+    width: 200px;
+    cursor: pointer;
+}
+
+.social-media {
+    width: 50px;
+}
+
+.center-sm {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sep-word {
+    padding-left: 10px
+}
+
+.dt_footer {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.dd_footer {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.submit-sitk {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #1A2732;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-end {
+    background-color: #8996A0;
+}
+
+.bottom-nav {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.bottom-nav-words {
+    margin: 5px;
+}
+
+.last-line {
+    margin-top: 0; margin-bottom: 0;
+    margin-right: 10px; margin-left: 5px;
+}
