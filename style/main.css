@@ -154,6 +154,16 @@ a {
     cursor: pointer;
 }
 
+.submit-disabled {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+}
+
 .footer-end {
     background-color: #8996A0;
 }
@@ -170,4 +180,8 @@ a {
 .last-line {
     margin-top: 0; margin-bottom: 0;
     margin-right: 10px; margin-left: 5px;
+}
+
+.validationCorrect {
+    display: none;
 }

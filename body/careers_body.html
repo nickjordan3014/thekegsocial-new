@@ -245,7 +245,7 @@
                         <label for="Q7">No</label>
                     </dd>
                 </dl>
-                <dl class="double-item">
+                <dl class="double-item"> <!--Education-->
                     <h2>Educational Experience</h2>
                     <hr>
                 </dl>
@@ -316,7 +316,7 @@
                         <label for="option6">Employee</label>
                     </dd>
                 </dl>
-                <dl class="double-item">
+                <dl class="double-item"> <!--Resume-->
                     <dt class="dt_form_item">
                         <p class="Questions"><strong>Upload Resume</strong></p>
                     </dt>
@@ -325,7 +325,7 @@
                         <input type="file" id="resume" name="resume">
                     </dd>
                 </dl>
-                <dl class="double-item">
+                <dl class="double-item"> <!--skills and training-->
                     <dt class="dt_form_item">
                         <h2>Job Skills / Training</h2>
                         <hr>
@@ -333,11 +333,262 @@
                 </dl>
                 <dl class="double-item">
                     <dt class="dt_form_item">
-                        <p class="Questions">What makes you amazing at what you're applying for? *</p>
+                        <label for="bigbox1">What makes you amazing at what you're applying for? *</label><br>
                     </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="bigbox1" id="bigbox1" class="bigbox">
+                    </dd>
+                </dl>
+                <dl class="double-item">
+                    <dt class="dt_form_item">
+                        <label for="bigbox2">Training or Certifications: </label><br>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="bigbox2" id="bigbox2" class="bigbox">
+                    </dd>
+                </dl>
+                <!--references-->
+                <dl class="double-item"> 
+                    <dt class="dt_form_item">
+                        <h2>Reference 1</h2>
+                        <hr>
+                    </dt>
+                </dl>
+                <!--referenece 1-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="reference1_fn">First Name </label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="reference1_fn" id="reference1_fn" class="form-item" placeholder="First Name">
+                    </dd>
+                </dl>
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="reference1_ln">Last Name</label>
+                    <dd class="dd_form_item">
+                        <input type="text" name="reference1_ln" id="reference1_ln" class="form-item" placeholder="Last Name">
+                    </dd>
+                </dl>
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="reference1_pn">Phone Number *</label>
+                    <dd class="dd_form_item">
+                        <input type="text" name="reference1_pn" id="reference1_pn" class="form-item" placeholder="xxx-xxx-xxxx">
+                    </dd>
+                </dl>
+                <dl class="single-item"></dl>
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="reference1_ln">Years Known *</label>
+                    <dd class="dd_form_item">
+                        <input type="number" name="reference1_ln" id="reference1_ln" class="form-item" placeholder="Last Name">
+                        <span class="validation">Please Enter a number greater than or equal to 1</span>
+                    </dd>
+                </dl>
+                <dl class="single_item"></dl>
+                <!--street address-->
+                <dl class="double-item">
+                    <dt class="dt_form_item">
+                        <label for="address_r1">Street Address *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="address_r1" id="address_r1" class="form-item" placeholder="Address">
+                        <span id="addressValidation_r1" class="hideContent">Address should only contain letters, numbers, spaces and #'.,-/</span>
+                    </dd>
+                </dl><!--city-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="city_r1">City</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="city_r1" id="city_r1" class="form-item" placeholder="City">
+                        <span id="cityValidation_r1" class="hideContent">City should only contain Letters, Spaces, and -</span>
+                    </dd>
+                </dl><!--state-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="state_r1">State / Province / Region</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="state_r1" id="state_r1" class="form-item" placeholder="State">
+                        <span id="stateValidation_r1" class="hideContent">States, Provinces, and Regions should only contain Letters, Spaces, and -</span>
+                    </dd>
+                </dl><!--zip-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="zip_r1">Zip / Postal Code</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="zip_r1" id="zip_r1" class="form-item" placeholder="Zip / Postal Code">
+                        <span id="zipValidation_r1" class="hideContent">Zip/Postal Code should only contain Numbers, Letters, Spaces, and -</span>
+                    </dd>
+                </dl><!--country-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="country_r1">Country</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="country_r1" id="countryId_r1" class="form-item" placeholder="Country">
+                        <span id="countryValidation_r1" class="hideContent">Countries should only contain Letters, Spaces, and -</span>
+                    </dd>
+                </dl>
+                <!--references-->
+                <dl class="double-item"> 
+                    <dt class="dt_form_item">
+                        <h2>Reference 2</h2>
+                        <hr>
+                    </dt>
+                </dl>
+                <!--referenece 2-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="reference2_fn">First Name </label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="reference2_fn" id="reference2_fn" class="form-item" placeholder="First Name">
+                    </dd>
+                </dl>
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="reference2_ln">Last Name</label>
+                    <dd class="dd_form_item">
+                        <input type="text" name="reference2_ln" id="reference2_ln" class="form-item" placeholder="Last Name">
+                    </dd>
+                </dl>
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="reference2_pn">Phone Number *</label>
+                    <dd class="dd_form_item">
+                        <input type="text" name="reference2_pn" id="reference2_pn" class="form-item" placeholder="xxx-xxx-xxxx">
+                    </dd>
+                </dl>
+                <dl class="single-item"></dl>
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="reference1_ln">Years Known *</label>
+                    <dd class="dd_form_item">
+                        <input type="number" name="reference2_ln" id="reference2_ln" class="form-item" placeholder="Last Name">
+                        <span class="validation">Please Enter a number greater than or equal to 1</span>
+                    </dd>
+                </dl>
+                <dl class="single_item"></dl>
+                <!--street address-->
+                <dl class="double-item">
+                    <dt class="dt_form_item">
+                        <label for="address_r2">Street Address *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="address_r2" id="address_r2" class="form-item" placeholder="Address">
+                        <span id="addressValidation_r2" class="hideContent">Address should only contain letters, numbers, spaces and #'.,-/</span>
+                    </dd>
+                </dl><!--city-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="city_r2">City</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="city_r2" id="city_r2" class="form-item" placeholder="City">
+                        <span id="cityValidation_r2" class="hideContent">City should only contain Letters, Spaces, and -</span>
+                    </dd>
+                </dl><!--state-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="state_r2">State / Province / Region</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="state_r2" id="state_r2" class="form-item" placeholder="State">
+                        <span id="stateValidation_r2" class="hideContent">States, Provinces, and Regions should only contain Letters, Spaces, and -</span>
+                    </dd>
+                </dl><!--zip-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="zip_r2">Zip / Postal Code</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="zip_r2" id="zip_r2" class="form-item" placeholder="Zip / Postal Code">
+                        <span id="zipValidation_r2" class="hideContent">Zip/Postal Code should only contain Numbers, Letters, Spaces, and -</span>
+                    </dd>
+                </dl><!--country-->
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="country_r2">Country</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="country_r2" id="countryId_r2" class="form-item" placeholder="Country">
+                        <span id="countryValidation_r2" class="hideContent">Countries should only contain Letters, Spaces, and -</span>
+                    </dd>
+                </dl>
+                <dl class="double-item">
+                    <h2>Applicant Certification Agreement</h2>
+                    <p>
+                        I understand that nothing contained in this application or in the granting of an 
+                        interview creates a contract between the company and me for either employment or 
+                        the providing of any benefit. No promises regarding employment have been made to me, 
+                        and I understand that no such promise or guarantee is binding upon the company unless 
+                        made in writing by the designated company executive officer. If an employment 
+                        relationship is established, I acknowledge that no consideration has been furnished 
+                        to the company for my employment other than my services. The answers I have given herein 
+                        are true and complete. I authorize the company to investigate all statements contained in 
+                        this application for employment that may be necessary in arriving at an employment decision. 
+                        I authorize all persons and entities, including but not limited to schools, companies, and 
+                        corporations, credit bureaus and law-enforcement agencies, to supply the company with 
+                        information concerning my background, and I release everyone from liability for any damage 
+                        that may result from furnishing information to the company. I understand that if hired: 
+                        (1) Employment could be made contingent on my taking and passing a job-related background 
+                        check and/or test for illegal drug use, with any fees being paid by the company; 
+                        (2) My employment would not be for a definite period but would be irrevocably at-will, 
+                        meaning that I would be discharged at any time, either with or without cause or prior 
+                        notice; (3) Only the Company President, Vice President, or Owner has authority to enter 
+                        into an agreement for employment for any specified period of time and the at-will employment 
+                        relationship can only be changed in writing and signed by the President, Vice President, or 
+                        Owner; (4) I would be required to submit proof of my eligibility to work in the United States; 
+                        (5) I could be immediately discharged for having omitted or given false or misleading information
+                        in my application or interview(s); (6) I would be required to obey all rules and policies of the
+                        company; (7) Except for the item of employment, which specifies that my employment with the 
+                        company would be irrevocably AT WILL, the company could, for any or no reason, change, revoke
+                        or add to the terms and conditions of my employment at any time by notifying me of the change,
+                        revocation or addition, and by remaining in the company's employment after having to be 
+                        notified, I will have agreed to the change, revocation or addition. The foregoing specifies
+                        the entire agreement between me and the company on the matter it covers. There are no oral 
+                        or collateral agreements of any kind. This agreement cannot be modified except in writing.
+                    </p>
+                </dl>
+                <dl class="double-item">
+                    <dt class="dt_form_item">
+                        <label for="submitDate">Date *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="date" name="submitDate" id="submitDate" class="form-item"/>
+                        <p>By entering your name, you are signing this form and certify that the above statements 
+                            are true and correct to the best of your knowledge. The company complies with ADA 
+                            regulations and will consider reasonable accommodation measures that may be necessary
+                            for eligible applicants/employees to perform the essential functions of this specific 
+                            position being applied for.</p>
+                    </dd>
+                </dl>
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="first_name_sig">Signature *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="first_name_sig" id="first_name_sig" class="form-item">
+                        <span class="validation">First Name</span>
+                    </dd>
+                </dl>
+                <dl class="single-item">
+                    <dt class="dt_form_item">
+                        <label for="last_name_sig">Signature *</label>
+                    </dt>
+                    <dd class="dd_form_item">
+                        <input type="text" name="last_name_sig" id="last_name_sig" class="form-item">
+                        <span class="validation">First Name</span>
+                    </dd>
+                </dl>
+                <dl class="double-item">
+                    <button type="submit" class="submit"><strong>Join The Team</strong></button>
                 </dl>
             </form>
         </div>
-        <div class="single-item"></div>
     </div>
     </div>

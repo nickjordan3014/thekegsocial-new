@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="footer-item">
-                <form action="../php/sitk.php" name="stay-in-the-know" id="sitk_validation">
+                <form action="#" method="post" id="sitk_form">
                     <p>Stay in the Know</p>
                     <hr class="house-info-line">
                     <dl>
@@ -47,21 +47,24 @@
                         </dt>
                         <dd class="dd_footer">
                             <input type="text" name="first_name" id="first_name" value>
+                            <br><span class="validationCorrect" id="fn_span">Not a valid name</span>
                         </dd>
                         <dt class="dt_footer">
                             <label for="last_name">Last Name* </label>
                         </dt>
                         <dd class="dd_footer">
                             <input type="text" name="last_name" id="last_name" value>
+                            <br><span class="validationCorrect" id="ln_span">Not a valid name</span>
                         </dd class="dd_footer">
                         <dt class="dt_footer">
                             <label for="email">Email*</label>
                         </dt>
                         <dd class="dd_footer">
                             <input type="text" name="email" id="email" value>
+                            <br><span class="validationCorrect" id="email_span">Not a valid email</span>
                         </dd>
                         <dd class="dd_footer">
-                            <input type="submit" id="submit_sitk" value="Submit" class="submit-sitk">
+                            <button type="submit" id="submit_sitk" name="stay-in-the-know" class="submit-disabled" disabled>Submit</button>
                         </dd>
                     </dl>
                 </form>
