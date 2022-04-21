@@ -18,40 +18,40 @@
         <!--form-->
         <div class="single-item"></div>
         <div class="double-item">
-            <form action="../php/careers.php" name="careers" id="careers-form" class="form-grid">
+            <form action="" name="careers" id="careers-form" class="form-grid">
                 <dl class="double-item"> <!--todays date-->
                     <dt class="dt_form_item">
-                        <label for="date">Today's Date *</label>
+                        <label for="todayDate">Today's Date *</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="date" name="date" id="date_id" class="form-item">
+                        <input type="date" name="todayDate" class="form-item">
                     </dd>
                 </dl><!--first name-->
                 <dl class="single-item">
                     <dt class="dt_form_item">
-                        <label for="name">First Name</label>
+                        <label for="firstName">First Name *</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="first_name" id="firstNameId" class="form-item" placeholder="First Name">
-                        <span id="firstNameValidation" class="hideContent">First Name should only contain letters</span>
+                        <input type="text" name="firstName" id="firstName" class="form-item" placeholder="First Name">
+                        <span id="firstNameValidation" class="validationCorrect">First Name should only contain letters</span>
                     </dd>
                 </dl><!--last name-->
                 <dl class="single-item">
                     <dt class="dt_form_item">
-                        <label for="name">Last Name</label>
+                        <label for="lastName">Last Name *</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="last_name" id="lastNameId" class="form-item" placeholder="Last Name">
-                        <span id="lastNameValidation" class="hideContent">Last Name should only contain letters</span>
+                        <input type="text" name="lastName" id="lastName" class="form-item" placeholder="Last Name">
+                        <span id="lastNameValidation" class="validationCorrect">Last Name should only contain letters</span>
                     </dd>
                 </dl><!--street address-->
                 <dl class="double-item">
                     <dt class="dt_form_item">
-                        <label for="address">Street Address *</label>
+                        <label for="streetAddress">Street Address *</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="address" id="address_id" class="form-item" placeholder="Address">
-                        <span id="addressValidation" class="hideContent">Address should only contain letters, numbers, spaces and #'.,-/</span>
+                        <input type="text" name="streetAddress" id="streetAddress" class="form-item" placeholder="Address">
+                        <span id="addressValidation" class="validationCorrect">Address should only contain letters, numbers, spaces and #'.,-/</span>
                     </dd>
                 </dl><!--city-->
                 <dl class="single-item">
@@ -59,7 +59,7 @@
                         <label for="city">City</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="city" id="cityId" class="form-item" placeholder="City">
+                        <input type="text" name="city" id="city" class="form-item" placeholder="City">
                         <span id="cityValidation" class="hideContent">City should only contain Letters, Spaces, and -</span>
                     </dd>
                 </dl><!--state-->
@@ -68,7 +68,7 @@
                         <label for="state">State / Province / Region</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="state" id="stateId" class="form-item" placeholder="State">
+                        <input type="text" name="state" id="state" class="form-item" placeholder="State">
                         <span id="stateValidation" class="hideContent">States, Provinces, and Regions should only contain Letters, Spaces, and -</span>
                     </dd>
                 </dl><!--zip-->
@@ -77,7 +77,7 @@
                         <label for="zip">Zip / Postal Code</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="zip" id="zipId" class="form-item" placeholder="Zip / Postal Code">
+                        <input type="text" name="zip" id="zip" class="form-item" placeholder="Zip / Postal Code">
                         <span id="zipValidation" class="hideContent">Zip/Postal Code should only contain Numbers, Letters, Spaces, and -</span>
                     </dd>
                 </dl><!--country-->
@@ -86,7 +86,7 @@
                         <label for="country">Country</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="country" id="countryId" class="form-item" placeholder="Country">
+                        <input type="text" name="country" id="country" class="form-item" placeholder="Country">
                         <span id="countryValidation" class="hideContent">Countries should only contain Letters, Spaces, and -</span>
                     </dd>
                 </dl><!--cell phone-->
@@ -95,7 +95,7 @@
                         <label for="cellPhone">Cell Phone *</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="cellPhone" id="cellPhoneId" class="form-item" placeholder="xxx-xxx-xxxx">
+                        <input type="text" name="cellPhone" id="cellPhone" class="form-item" placeholder="xxx-xxx-xxxx">
                         <span id="cellPhoneValidation" class="hideContent">Phone numbers should only contain numbers, -, and ()</span>
                     </dd>
                 </dl><!--home phone-->
@@ -104,7 +104,7 @@
                         <label for="homePhone">Home Phone</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="homePhone" id="homePhoneId" class="form-item" placeholder="xxx-xxx-xxxx">
+                        <input type="text" name="homePhone" id="homePhone" class="form-item" placeholder="xxx-xxx-xxxx">
                         <span id="homePhoneValidation" class="hideContent">Phone numbers should only contain numbers, -, and ()</span>
                     </dd>
                 </dl><!--Email-->
@@ -113,7 +113,7 @@
                         <label for="email">Email</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="email" id="emailId" class="form-item" placeholder="Email">
+                        <input type="text" name="email" id="email" class="form-item" placeholder="Email">
                         <span id="emailValidation" class="hideContent">Email should contain an @ and .</span>
                     </dd>
                 </dl>
@@ -123,9 +123,9 @@
                         <p class="Questions">Are you 18 years or older? *</p>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="radio" id="Q1_yes" name="Q1" value="Yes" class="Answers">
+                        <input type="radio" name="Q1" value="Yes" class="Answers">
                         <label for="Q1">Yes</label><br>
-                        <input type="radio" id="Q1_no" name="Q1" value="No" class="Answers">
+                        <input type="radio" name="Q1" value="No" class="Answers">
                         <label for="Q1">No</label>
                     </dd>
                 </dl>
@@ -137,9 +137,9 @@
                         </p>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="radio" id="Q2_yes" name="Q2" value="Yes" class="Answers">
+                        <input type="radio" name="Q2" value="Yes" class="Answers">
                         <label for="Q2">Yes</label><br>
-                        <input type="radio" id="Q2_no" name="Q2" value="No" class="Answers">
+                        <input type="radio" name="Q2" value="No" class="Answers">
                         <label for="Q2">No</label>
                     </dd>
                 </dl>
@@ -149,51 +149,65 @@
                             Position(s) you would like to apply for: *
                         </p>
                     </dt>
-                    <dd class="dd_form_item">
-                        <input type="checkbox" id="job1" name="job1" value="Axe Throwing" class="Answers"><!--axe-->
-                        <label for="job1" id="axeDesc">Axe Throwing</label>
+                    <dd class="dd_form_item"> <!--no js, just php-->
+                        <input type="checkbox" name="axeThrowing" value="Axe Throwing" class="Answers"><!--axe-->
+                        <label for="axeThrowing" id="axeDesc">Axe Throwing</label>
                         <span class="desc hideContent">Axe Throwing Job Description</span><br>
-                        <input type="checkbox" id="job2" name="job2" value="Barback" class="Answers"><!--barback-->
-                        <label for="job2" id="bbDesc">Barback</label>
+
+                        <input type="checkbox" name="barback" value="Barback" class="Answers"><!--barback-->
+                        <label for="barback" id="bbDesc">Barback</label>
                         <span class="desc hideContent">Barback Job Description</span><br>
-                        <input type="checkbox" id="job3" name="job3" value="Bartender" class="Answers"><!--bartender-->
-                        <label for="job3" id="btDesc">Bartender</label>
+
+                        <input type="checkbox" name="bartender" value="Bartender" class="Answers"><!--bartender-->
+                        <label for="bartender" id="btDesc">Bartender</label>
                         <span class="desc hideContent">Bartender Job Description</span><br>
-                        <input type="checkbox" id="job4" name="job4" value="Dishwasher" class="Answers"><!--dishwasher-->
-                        <label for="job4" id="dwDesc">Dishwasher</label>
+
+                        <input type="checkbox" name="dishwasher" value="Dishwasher" class="Answers"><!--dishwasher-->
+                        <label for="dishwasher" id="dwDesc">Dishwasher</label>
                         <span class="desc hideContent">Dishwasher Job Description</span><br>
-                        <input type="checkbox" id="job5" name="job5" value="Expo" class="Answers"><!--expo-->
-                        <label for="job5" id="eDesc">Expo</label>
+
+                        <input type="checkbox" name="expo" value="Expo" class="Answers"><!--expo-->
+                        <label for="expo" id="eDesc">Expo</label>
                         <span class="desc hideContent">Expo Job Description</span><br>
-                        <input type="checkbox" id="job6" name="job6" value="Food Runner" class="Answers"><!--Food Runner-->
-                        <label for="job6" id="frDesc">Food Runner</label>
+
+                        <input type="checkbox" name="foodRunner" value="Food Runner" class="Answers"><!--Food Runner-->
+                        <label for="foodRunner" id="frDesc">Food Runner</label>
                         <span class="desc hideContent">Food Runner Job Description</span><br>
-                        <input type="checkbox" id="job7" name="job7" value="GSR" class="Answers"><!--GSR-->
-                        <label for="job7" id="gsrDesc">Guest Service Representative (GSR)</label>
+
+                        <input type="checkbox" name="GSR" value="GSR" class="Answers"><!--GSR-->
+                        <label for="GSR" id="gsrDesc">Guest Service Representative (GSR)</label>
                         <span class="desc hideContent">GSR Job Description</span><br>
-                        <input type="checkbox" id="job8" name="job8" value="Host/Activities" class="Answers"><!--Host-->
-                        <label for="job8" id="haDesc">Host/Activities</label>
+
+                        <input type="checkbox" name="host" value="Host/Activities" class="Answers"><!--Host-->
+                        <label for="host" id="haDesc">Host/Activities</label>
                         <span class="desc hideContent">Host and Activities Job Description</span><br>
-                        <input type="checkbox" id="job9" name="job9" value="LeadCook" class="Answers"><!--Lead Cook-->
-                        <label for="job9" id="leadcookDesc">Lead Cook</label>
+
+                        <input type="checkbox" name="leadcook" value="LeadCook" class="Answers"><!--Lead Cook-->
+                        <label for="leadcook" id="leadcookDesc">Lead Cook</label>
                         <span class="desc hideContent">Lead Cook Job Description</span><br>
-                        <input type="checkbox" id="job10" name="job10" value="LineCook" class="Answers"><!--Line Cook-->
-                        <label for="job10" id="linecookDesc">Line Cook</label>
+
+                        <input type="checkbox" name="linecook" value="LineCook" class="Answers"><!--Line Cook-->
+                        <label for="linecook" id="linecookDesc">Line Cook</label>
                         <span class="desc hideContent">Line Cook Job Description</span><br>
-                        <input type="checkbox" id="job11" name="job11" value="Mechanic" class="Answers"><!--mechanic-->
-                        <label for="job11" id="mDesc">Mechanic</label>
+
+                        <input type="checkbox" name="mechanic" value="Mechanic" class="Answers"><!--mechanic-->
+                        <label for="mechanic" id="mDesc">Mechanic</label>
                         <span class="desc hideContent">Mechanic Job Description</span><br>
-                        <input type="checkbox" id="job12" name="job12" value="Prep Cook" class="Answers"><!--prep cook-->
-                        <label for="job12" id="pcDesc">Prep Cook</label>
+
+                        <input type="checkbox" name="prepcook" value="Prep Cook" class="Answers"><!--prep cook-->
+                        <label for="prepcook" id="pcDesc">Prep Cook</label>
                         <span class="desc hideContent">Prep Cook Job Description</span><br>
-                        <input type="checkbox" id="job13" name="job13" value="Sales Coordinator" class="Answers"><!--sales coordinator-->
-                        <label for="job13" id="scDesc">Sales Coordinator</label>
+
+                        <input type="checkbox" name="salesCoordinator" value="Sales Coordinator" class="Answers"><!--sales coordinator-->
+                        <label for="salesCoordinator" id="scDesc">Sales Coordinator</label>
                         <span class="desc hideContent">Sales Coordinator Job Description</span><br>
-                        <input type="checkbox" id="job14" name="job14" value="Server" class="Answers"><!--server-->
-                        <label for="job14" id="sDesc">Server</label>
+
+                        <input type="checkbox" name="server" value="Server" class="Answers"><!--server-->
+                        <label for="server" id="sDesc">Server</label>
                         <span class="desc hideContent">Server Job Description</span><br>
-                        <input type="checkbox" id="job15" name="job15" value="Supervisor Position" class="Answers"><!--leadership position-->
-                        <label for="job15" id="spDesc">Supervisor Position</label>
+
+                        <input type="checkbox" name="supervisorPosition" value="Supervisor Position" class="Answers"><!--leadership position-->
+                        <label for="supervisorPosition" id="spDesc">Supervisor Position</label>
                         <span class="desc hideContent">Supervisor Position Job Description</span>
                     </dd>
                 </dl>
@@ -206,9 +220,9 @@
                         <p class="Questions">Are you willing/able to work nights? *</p>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="radio" id="Q4_yes" name="Q4" value="Q4" class="Answers">
+                        <input type="radio" name="Q4" value="Q4" class="Answers">
                         <label for="Q4">Yes</label><br>
-                        <input type="radio" id="Q4_no" name="Q4" value="Q4" class="Answers">
+                        <input type="radio" name="Q4" value="Q4" class="Answers">
                         <label for="Q4">No</label>
                     </dd>
                 </dl>
@@ -217,9 +231,9 @@
                         <p class="Questions">Are you willing/able to work on the weekends? *</p>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="radio" id="Q5_yes" name="Q5" value="Q5" class="Answers">
+                        <input type="radio" name="Q5" value="Q5" class="Answers">
                         <label for="Q5">Yes</label><br>
-                        <input type="radio" id="Q4_no" name="Q5" value="Q5" class="Answers">
+                        <input type="radio" name="Q5" value="Q5" class="Answers">
                         <label for="Q5">No</label>
                     </dd>
                 </dl>
@@ -228,9 +242,9 @@
                         <p class="Questions">Are you willing/able to work a rotational work schedule? *</p>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="radio" id="Q6_yes" name="Q6" value="Q6" class="Answers">
+                        <input type="radio" name="Q6" value="Q6" class="Answers">
                         <label for="Q6">Yes</label><br>
-                        <input type="radio" id="Q6_no" name="Q6" value="Q6" class="Answers">
+                        <input type="radio" name="Q6" value="Q6" class="Answers">
                         <label for="Q6">No</label>
                     </dd>
                 </dl>
@@ -239,9 +253,9 @@
                         <p class="Questions">Are you willing/able to work overtime? *</p>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="radio" id="Q7_yes" name="Q7" value="Q7" class="Answers">
+                        <input type="radio" name="Q7" value="Q7" class="Answers">
                         <label for="Q7">Yes</label><br>
-                        <input type="radio" id="Q7_no" name="Q7" value="Q7" class="Answers">
+                        <input type="radio" name="Q7" value="Q7" class="Answers">
                         <label for="Q7">No</label>
                     </dd>
                 </dl>
@@ -254,7 +268,7 @@
                         <label for="highschool">High School Name *</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="highschool" id="hsId" class="form-item" placeholder="High School Name">
+                        <input type="text" name="highschool" id="highschool" class="form-item" placeholder="High School Name">
                     </dd>
                 </dl>
                 <dl class="single_item">
@@ -262,7 +276,7 @@
                         <label for="gradyear">Graduation Year</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="number" name="gradyear" id="gradyearId" class="form-item" placeholder="Graduation Year">
+                        <input type="number" name="gradyear" id="gradyear" class="form-item" placeholder="Graduation Year">
                     </dd>
                 </dl>
                 <dl class="single_item">
@@ -270,7 +284,7 @@
                         <label for="college">College/University *</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="college" id="collegeId" class="form-item" placeholder="College/University">
+                        <input type="text" name="college" id="college" class="form-item" placeholder="College/University">
                     </dd>
                 </dl>
                 <dl class="single_item">
@@ -278,7 +292,7 @@
                         <label for="cgradyear">Graduation Year</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="number" name="cgradyear" id="cgradyearId" class="form-item" placeholder="Graduation Year">
+                        <input type="number" name="cgradyear" id="cgradyear" class="form-item" placeholder="Graduation Year">
                     </dd>
                 </dl>
                 <dl class="single_item">
@@ -286,7 +300,7 @@
                         <label for="trade">Trade/Other *</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="text" name="trade" id="tradeId" class="form-item" placeholder="Trade/Other">
+                        <input type="text" name="trade" id="trade" class="form-item" placeholder="Trade/Other">
                     </dd>
                 </dl>
                 <dl class="single_item">
@@ -294,7 +308,7 @@
                         <label for="tgradyear">Graduation Year</label>
                     </dt>
                     <dd class="dd_form_item">
-                        <input type="number" name="tgradyear" id="tgradyearId" class="form-item" placeholder="Graduation Year">
+                        <input type="number" name="tgradyear" id="tgradyear" class="form-item" placeholder="Graduation Year">
                     </dd>
                 </dl>
                 <dl class="double-item">
@@ -380,9 +394,10 @@
                 <dl class="single-item"></dl>
                 <dl class="single-item">
                     <dt class="dt_form_item">
-                        <label for="reference1_ln">Years Known *</label>
+                        <label for="reference1_yk">Years Known *</label>
+                    </dt>
                     <dd class="dd_form_item">
-                        <input type="number" name="reference1_ln" id="reference1_ln" class="form-item" placeholder="Last Name">
+                        <input type="number" name="reference1_kn" id="reference1_kn" class="form-item" placeholder="Last Name">
                         <span class="validation">Please Enter a number greater than or equal to 1</span>
                     </dd>
                 </dl>
@@ -466,9 +481,9 @@
                 <dl class="single-item"></dl>
                 <dl class="single-item">
                     <dt class="dt_form_item">
-                        <label for="reference1_ln">Years Known *</label>
+                        <label for="reference1_yk">Years Known *</label>
                     <dd class="dd_form_item">
-                        <input type="number" name="reference2_ln" id="reference2_ln" class="form-item" placeholder="Last Name">
+                        <input type="number" name="reference2_yk" id="reference2_yk" class="form-item" placeholder="Last Name">
                         <span class="validation">Please Enter a number greater than or equal to 1</span>
                     </dd>
                 </dl>
@@ -586,7 +601,7 @@
                     </dd>
                 </dl>
                 <dl class="double-item">
-                    <button type="submit" class="submit"><strong>Join The Team</strong></button>
+                    <button class="submitCareersDisabled" id="submitCareers" disabled><strong>Join The Team</strong></button>
                 </dl>
             </form>
         </div>
