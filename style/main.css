@@ -20,7 +20,6 @@ p {
         display: grid;
         content: justify;
     } .grid-item {
-        columns: 1 / auto;
         text-align: center;
     }
 
@@ -28,10 +27,7 @@ p {
         text-decoration: none;
         color: white;
         display: block;
-    } .nav-logo {
-        width: 75px;
-        position: relative;
-    }
+    } 
     /*Footer Grid*/
     .information-grid {
         grid-template-columns:auto;
@@ -45,7 +41,29 @@ p {
     .goaway {
         display: none;
     }
-    
+    .center-sm {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-nav {
+        text-align: center;
+    }
+    .nav-logo {
+        width: 75px;
+        
+        padding: 10px;
+    }
+    .nav-center {
+        display: block;
+        margin: auto;
+    }
+    .hamburger {
+        width: 30px;
+        padding: 25px;
+        color: white;
+    }
 }
 
 /* Large devices (laptops/desktops, 768px and up) */
@@ -55,7 +73,6 @@ p {
         height: 75px;
     }
     .grid-item {
-        columns: 1 / auto;
         position: absolute;
         top: 5px;
         left: 5px;
@@ -102,6 +119,14 @@ p {
         text-align: left;
         margin: 10px;
     }
+    .center-sm {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .mobile-nav {
+        display: none;
+    }
 }
 
 /*Footer Styling*/
@@ -124,11 +149,7 @@ a {
     width: 50px;
 }
 
-.center-sm {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-}
+
 
 .sep-word {
     padding-left: 10px

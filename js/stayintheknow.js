@@ -26,6 +26,7 @@ function stayIntheKnowValidation() {
         item2 = false,
         item3 = false
     ];
+    
     // Individual function calls to validate each form item
     validationVariables[0].element.onblur = function(){ // FIRST NAME
         mainValidation(validationVariables, validationVariables[0], isitTrue);

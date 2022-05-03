@@ -1,53 +1,52 @@
 //Disables button and changes buttons class
-function disableButton() { 
-    let submitButton = document.getElementById("submitCareers");
-    submitButton.disabled = true;
-    submitButton.removeAttribute("class");
-    submitButton.setAttribute("class", "submit-disabled")
+function disableButtonC() { 
+    let submitButtonC = document.getElementById("submitCareers");
+    submitButtonC.disabled = true;
+    submitButtonC.removeAttribute("class");
+    submitButtonC.setAttribute("class", "submitCareersDisabled ")
 }
 //enables button and changes buttons class
-function enableButton() { 
-    let submitButton = document.getElementById("submitCareers");
-    submitButton.disabled = false;
-    submitButton.removeAttribute("class");
-    submitButton.setAttribute("class", "submit")
+function enableButtonC() { 
+    let submitButtonC = document.getElementById("submitCareers");
+    submitButtonC.disabled = false;
+    submitButtonC.removeAttribute("class");
+    submitButtonC.setAttribute("class", "submit")
 }
 // shows hints if users input is wrong
-function changeClass(object) { 
-    if (object.element.value.match(object.regEx)) {
-        object.elementSpan.setAttribute("class", "validationCorrect");
-        object.validated = true;
+function changeClassC(careersObject) { 
+    if (careersObject.element.value.match(careersObject.regEx)) {
+        careersObject.elementSpan.setAttribute("class", "validationCorrect");
+        careersObject.validated = true;
     } else {
-        
-        object.elementSpan.removeAttribute("class");
-        object.validated = false;
+        careersObject.elementSpan.removeAttribute("class");
+        careersObject.validated = false;
     }
 }
 // unlocks the button if all inputs are correct 
-function unlockButton(object, isitTrue) { 
-    for (i = 0; i < 1; i++) {
-        if (object[i].validated == true) {
-            isitTrue[i] = true;
+function unlockButtonC(careersObject, isItValidated) { 
+    for (i = 0; i < 2; i++) {
+        if (careersObject[i].validated == true) {
+            isItValidated[i] = true;
         } else {
-            isitTrue[i] = false; 
-            // isitTrue[lastvalue] = false; 
+            isItValidated[i] = false; 
+            isItValidated[1] = false; 
             break; // will never validate last value unless all values before are true
         }
     }
 
-    if ((isitTrue[0]) == true) { // only when the last value is made true, will submit unlock
+    if ((isItValidated[1]) == true) { // only when the last value is made true, will submit unlock
         return true;
     } else {
         return false;
     }
 }
 // Main Validation function
-function mainValidation(props, key, boolean) {
-    changeClass(key);
-        if(unlockButton(props, boolean)) {
-            enableButton();
+function mainValidationC(careersProps, careersKey, careersBoolean) {
+    changeClassC(careersKey);
+        if(unlockButtonC(careersProps, careersBoolean)) {
+            enableButtonC();
         } else {
-            disableButton();
+            disableButtonC();
         }
 }
 
@@ -55,7 +54,7 @@ function mainValidation(props, key, boolean) {
 // Function to call other validation functions
 function careersValidation() {
     // Object to get items from careers form
-    let validationVariables = [
+    let validationVariablesC = [
         {
             element : document.getElementById("firstName"),
             elementSpan : document.getElementById("firstNameValidation"),
@@ -75,11 +74,11 @@ function careersValidation() {
         item2 = false
     ];
 
-    validationVariables[0].element.onblur = function() {
-        mainValidation(validationVariables, validationVariables[0], isItValidated);
+    validationVariablesC[0].element.onblur = function() {
+        mainValidationC(validationVariablesC, validationVariablesC[0], isItValidated);
     }
-    validationVariables[1].element.onblur = function() {
-        mainValidation(validationVariables, validationVariables[1], isItValidated);
+    validationVariablesC[1].element.onblur = function() {
+        mainValidationC(validationVariablesC, validationVariablesC[1], isItValidated);
     }
 }
 

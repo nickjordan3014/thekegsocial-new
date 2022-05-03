@@ -24,13 +24,11 @@
                 <a href="privateevents.html"><img src="img/main/button.svg" alt="Book a Party Button" class="party-button"></a>
                 <p>Find us on Instagram and Facebook!</p>
                 <hr class="house-info-line">
-                <div>
+                <div class="center-mobile">
                     <a href="https://www.instagram.com/thekegsocial/?hl=en" target="_blank" class="center-sm">
                         <img src="img/main/insta.png" alt="Instagram logo" class="social-media">
                         <span class="sep-word">@thekegsocial</span>
                     </a>
-                </div>
-                <div >
                     <a href="https://www.facebook.com/thekegsocial" target="_blank" class="center-sm">
                         <img src="img/main/facebook.png" alt="Facebook logo" class="social-media">
                         <span class="sep-word">The Keg Social</span>

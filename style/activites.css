@@ -74,21 +74,21 @@
     border: white 1px solid;
 }
 
-button {
+.nav-button {
     font-size: 15px;
-    margin-left: 25px; margin-right: 25px;
+    margin-left: 10px; margin-right: 10px;
     margin-top: 10px; margin-bottom: 10px;
-    padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;
+    padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;
     background-color: #8996A0;
     border: 2px solid black;
     display: inline-block;
     color: white;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 4px;
     transition-duration: 0.4s;
 }
 
-button:hover {
+.nav-button:hover {
     background-color: #1A2732;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
