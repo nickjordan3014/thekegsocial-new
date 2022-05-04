@@ -1,12 +1,13 @@
 /*image styling*/
 .body-photos {
     width: 100%;
-    margin: auto;
+    height: 100%;
+    margin: 0px;
 }
 
 /*text styling*/
 .body-text {
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
 }
 

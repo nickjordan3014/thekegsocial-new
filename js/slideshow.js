@@ -74,6 +74,7 @@ function Slideshow() {
     let bowlingButton = data.activityIds[0].activity;
     let toBowling1 = data.activityIds[1].leftarrow;
     let toBowling2 = data.activityIds[8].rightarrow;
+
     // to arcade
     let arcadeButton = data.activityIds[1].activity;
     let toArcade1 = data.activityIds[0].rightarrow;
@@ -199,6 +200,38 @@ function Slideshow() {
     }
     document.getElementById(toYardPong2).onclick = function() {
         ChangingActivity(yardPongButton)
+    }
+
+    document.getElementById("act-nav").onchange = function() {
+        switch(document.getElementById("act-nav").value) {
+            case "bowling" : 
+                ChangingActivity(bowlingButton);
+                break;
+            case "arcade" :
+                ChangingActivity(arcadeButton);
+                break;
+            case "axethrowing" :
+                ChangingActivity(axeButton);
+                break;
+            case "billiards" : 
+                ChangingActivity(billiardsButton);
+                break;
+            case "pingpong" :
+                ChangingActivity(pingPongButton);
+                break;
+            case "karaoke" : 
+                ChangingActivity(karaokeButton);
+                break;
+            case "cornhole" :
+                ChangingActivity(cornholeButton);
+                break;
+            case "beerpong" : 
+                ChangingActivity(beerPongButton);
+                break;
+            case "yardpong" : 
+                ChangingActivity(yardPongButton);
+                break;
+        }
     }
 }
 

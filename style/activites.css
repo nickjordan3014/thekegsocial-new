@@ -2,10 +2,10 @@
 
 .act-pics {
     width: 100%;
-    padding-top: 5px;
     border: 2px black;
     border-radius: 8px;
     transition-duration: 0.4s;
+    margin-top: 10px
 }
 .act-pics:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -25,6 +25,14 @@
     padding: 5px;
 }
 
+.act-select {
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    background-color: #8996A0;
+    color: white;
+}
+
 /*Slideshow Grid*/
 @media only screen and (max-width: 768px) {
     .slideshow {
@@ -39,6 +47,10 @@
     }
     .browser-slide {
         display: none;
+    }
+    .mobile-nav-act {
+        text-align: center;     
+        margin-top: 10px;
     }
 }
 
@@ -61,6 +73,9 @@
     .word-margin {
         margin: 10px;
     }
+    .mobile-nav-act {
+        display: none;
+    }
 }
 
 .displayStatus {
@@ -69,22 +84,20 @@
 
 /*button styling*/
 .act_nav {
-    background-color: #51626F;
     text-align: center;
-    border: white 1px solid;
 }
 
 .nav-button {
     font-size: 15px;
     margin-left: 10px; margin-right: 10px;
-    margin-top: 10px; margin-bottom: 10px;
+    margin-top: 20px; 
     padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;
     background-color: #8996A0;
-    border: 2px solid black;
+    border: 0.5px solid black;
     display: inline-block;
     color: white;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 2px;
     transition-duration: 0.4s;
 }
 

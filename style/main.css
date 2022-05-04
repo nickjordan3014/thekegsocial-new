@@ -16,18 +16,17 @@ p {
 /*  small and medium devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
     .grid {
-        grid-template-columns: 1;
+        grid-template-columns: auto auto;
         display: grid;
         content: justify;
-    } .grid-item {
-        text-align: center;
+        background-color: #51626F;
+    } .grid-item-1 {
+        text-align: left;
+        grid-column: auto / span 1;
+    } .grid-item-2 {
+        text-align: right;
+        grid-column: auto / span 1;
     }
-
-    .nav-word {
-        text-decoration: none;
-        color: white;
-        display: block;
-    } 
     /*Footer Grid*/
     .information-grid {
         grid-template-columns:auto;
@@ -47,12 +46,12 @@ p {
         align-items: center;
         justify-content: center;
     }
+    /*Mobile Navigation*/
     .mobile-nav {
-        text-align: center;
+        text-align: center;     
     }
     .nav-logo {
         width: 75px;
-        
         padding: 10px;
     }
     .nav-center {
@@ -63,7 +62,37 @@ p {
         width: 30px;
         padding: 25px;
         color: white;
+        cursor: pointer;
     }
+    .overlay {
+        position: fixed; /* Sit on top of the page content */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        display: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.75); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+    }
+    .overlay-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .nav-word {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        font-size: 20px;
+    } 
 }
 
 /* Large devices (laptops/desktops, 768px and up) */
@@ -71,6 +100,8 @@ p {
     .grid {
         grid-template-columns: auto;
         height: 75px;
+        background-color: #51626F;
+        border-bottom: white 1px solid;
     }
     .grid-item {
         position: absolute;
@@ -127,12 +158,16 @@ p {
     .mobile-nav {
         display: none;
     }
+    footer {
+        border-top: white 1px solid;
+    }
 }
 
 /*Footer Styling*/
 
 .house-info-line {
     margin-right: 20px; padding: 0;
+    width: 100%;
 }
 
 a {
