@@ -104,6 +104,23 @@ function Slideshow() {
         ChangingSpecial(dbButton);
     }
 
+    document.getElementById("sp-nav").onchange = function() {
+        switch(document.getElementById("sp-nav").value) {
+            case "Restaurant and Retail" : 
+                ChangingSpecial(rrButton);
+                break;
+            case "College Night" :
+                ChangingSpecial(cnButton);
+                break;
+            case "Ladies Night" :
+                ChangingSpecial(lnButton);
+                break;
+            case "Doorbuster" : 
+                ChangingSpecial(dbButton);
+                break;
+        }
+
+    }
 }
 
 window.addEventListener("load", Slideshow, false);

@@ -288,6 +288,47 @@ function DrinkSlideshow() {
     document.getElementById(toBH2).onclick = function() {
         ChangingDrinkType(bhButton);
     }
+
+    document.getElementById("drink-nav").onchange = function() {
+        switch(document.getElementById("drink-nav").value) {
+            case "Crafted Cocktails" : 
+                ChangingDrinkType(ccButton);
+                break;
+            case "Spirits" :
+                ChangingDrinkType(sButton);
+                break;
+            case "Flights" :
+                ChangingDrinkType(fButton);
+                break;
+            case "Lagers" : 
+                ChangingDrinkType(lButton);
+                break;
+            case "Ciders, Sours, Saisons" :
+                ChangingDrinkType(cssButton);
+                break;
+            case "I.P.A Pale Ales" : 
+                ChangingDrinkType(ipapaButton);
+                break;
+            case "Ambers, Browns, Stouts & Porters" :
+                ChangingDrinkType(abspButton);
+                break;
+            case "Golden, Blonde & Wheat Beers" : 
+                ChangingDrinkType(gbwbButton);
+                break;
+            case "Bottles & Cans" : 
+                ChangingDrinkType(bcButton);
+                break;
+            case "Canned Wine" :
+                ChangingDrinkType(cwButton);
+                break;
+            case "Social Hour" :
+                ChangingDrinkType(shButton);
+                break;
+            case "Boilermakers" :
+                ChangingDrinkType(bhButton);
+                break;
+        }
+    }
 }
 
 window.addEventListener("load", DrinkSlideshow, false);

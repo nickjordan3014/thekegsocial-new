@@ -187,6 +187,35 @@ function FoodSlideshow() {
     document.getElementById(toPonyKegs2).onclick = function() {
         ChangingMenuType(ponykegsButtons);
     }
+
+    document.getElementById("eat-nav").onchange = function() {
+        switch(document.getElementById("eat-nav").value) {
+            case "Starters" : 
+                ChangingMenuType(startersButton);
+                break;
+            case "Small Plates" :
+                ChangingMenuType(smallPlatesButtons);
+                break;
+            case "Salads" :
+                ChangingMenuType(saladsButton);
+                break;
+            case "Entrees" : 
+                ChangingMenuType(entreesButtons);
+                break;
+            case "Poutine" :
+                ChangingMenuType(poutineButtons);
+                break;
+            case "Flatbreads" : 
+                ChangingMenuType(flatbreadsButtons);
+                break;
+            case "Handhelds" :
+                ChangingMenuType(handheldsButtons);
+                break;
+            case "Pony Kegs" : 
+                ChangingMenuType(ponykegsButtons);
+                break;
+        }
+    }
 }
 
 window.addEventListener("load", FoodSlideshow, false);

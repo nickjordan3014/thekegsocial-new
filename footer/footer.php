@@ -6,9 +6,9 @@
                 <hr class="house-info-line">
                 <p>
                     Hours of Operation: <br>
-                    Mon - Fri: 4 PM - 2 AM <br>
+                    Mon - Fri: 2 PM - 2 AM <br>
                     Sat: 12 PM - 2 AM <br>
-                    Sun: 11 AM - 11 PM <br>
+                    Sun: 12 PM - 11 PM <br>
                     21+ After 9 PM <br>
                     Phone: 407-286-3000
                 </p>
